@@ -16,10 +16,15 @@ int ConvertBinary(int num)
     return binaryNum;
 }
 
-int ConvertBinaryRecurtoin(int num)
-if (number <2) return num %2;
-else return 
+void ConvertBinaryRecurtoin(int num) //метод перевод из десятичной системы в двоичную через рекурсию
+{
+    if (num == 0) return;
+    ConvertBinaryRecurtoin(num / 2);
+    Console.Write(num % 2);
+}
 
 int binaryNumber = ConvertBinary(number);
-
 System.Console.WriteLine($"{number} -> {binaryNumber}");
+System.Console.WriteLine();
+ConvertBinaryRecurtoin(number);
+
