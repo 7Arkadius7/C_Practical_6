@@ -16,6 +16,10 @@ int ConvertBinary(int num)
     return binaryNum;
 }
 
+int ConvertBinaryRecurtoin(int num)
+if (number <2) return num %2;
+else return 
+
 int binaryNumber = ConvertBinary(number);
 
 System.Console.WriteLine($"{number} -> {binaryNumber}");
